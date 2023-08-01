@@ -1,0 +1,15 @@
+ab='asf ds dd gggg    gdd    ddd'
+li=[]
+wo=''
+pr=False
+
+for i in ab:
+    if i!=' ':
+        wo+=i
+        pr=False
+    else:
+        if not pr:
+            li.append(wo)
+            wo=''
+            pr=True
+print(li)
